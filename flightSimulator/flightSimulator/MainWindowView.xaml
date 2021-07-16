@@ -1,0 +1,57 @@
+﻿<Window x:Class="flightSimulator.MainWindowView"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Flight Gear Application" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\User\source\repos\flightSimulator\flightSimulator\airplane.jpg" Stretch="Fill" />
+    </Window.Background>
+    <!-- Buttons arranged vertically inside a StackPanel. -->
+    <StackPanel Height="450" Width="800">
+		<Button x:Name="SettingsButton" Click="Button_Click" 
+                RenderTransformOrigin="5.078,3.056" 
+                HorizontalAlignment="Center"
+                Content="Get started!" Margin="-620,360, -600, 0"/>
+        <TextBlock Text="Welcome Aboard!!" 
+                       Width="250" FontSize="30" Height="100"
+                       FontWeight="Bold" Foreground="Black" 
+                       HorizontalAlignment="Center" 
+                       Margin="-620,-640, -600, 0">
+        </TextBlock>
+        <TextBlock Text="- To get started, open your FlightGear Application and select 'Fly'" 
+                       Width="600" FontSize="18" Height="100"
+                       FontStyle="Italic" Foreground="Black" 
+                       HorizontalAlignment="Center" 
+                       Margin="100,-500, 50, 0">
+        </TextBlock>
+        <TextBlock Text="- Afterwards, upload the data CSV file and select 'Play'" 
+                       Width="600" Height="100" FontSize="18" 
+                       FontStyle="Italic" Foreground="Black" 
+                       HorizontalAlignment="Center" 
+                       Margin="100,-440, 50, 0">
+        </TextBlock>
+        <TextBlock Text="- While the flight is occuring, you may view statistics on the" 
+                       Width="600" FontSize="18" Height="100"
+                       FontStyle="Italic" Foreground="Black" 
+                       HorizontalAlignment="Center" 
+                       Margin="100,-380, 50, 0">
+        </TextBlock>
+        <TextBlock Text="statistics window. You may also pause, stop or adjust speed from" 
+                       Width="600" FontSize="18" Height="100"
+                       FontStyle="Italic" Foreground="Black" 
+                       HorizontalAlignment="Center" 
+                       Margin="100,-340, 50, 0">
+        </TextBlock>
+        <TextBlock Text="the Control Panel window." 
+                       Width="600" FontSize="18"  Height="100"
+                       FontStyle="Italic" Foreground="Black" 
+                       HorizontalAlignment="Center" 
+                       Margin="100,-300, 50, 0">
+        </TextBlock>
+        <TextBlock Text="Enjoy your flight!" 
+                       Width="600" FontSize="24" FontWeight="DemiBold"
+                       FontStyle="Italic" Foreground="Black" 
+                       HorizontalAlignment="Center" 
+                       Margin="130,-140, -540, 0">
+        </TextBlock>
+    </StackPanel>
+</Window>
